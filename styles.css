@@ -1,0 +1,77 @@
+/* Text formatting comes first */
+h1, h2, p {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* tips for text shadows: https://www.w3schools.com/csS/css_text_shadow.asp */
+h1 {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px dodgerblue, 0 0 25px black, 0 0 5px green;
+  color: white;
+}
+
+h2 {
+  font-size: 18px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+body {
+  background-image: url("https://bgfons.com/uploads/water/water_texture2353.jpg");
+}
+
+/* Our flip boxes live in the roster flexbox */
+.roster {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+/* style image to be cropped into a square */
+.flip-box img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* CSS flipbox how-to: https://www.w3schools.com/howto/howto_css_flip_box.asp */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #006D75;
+  color: white;
+  transform: rotateY(180deg);
+}
