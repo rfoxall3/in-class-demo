@@ -1,5 +1,5 @@
 /* Text formatting comes first */
-h1, h2, p {
+h1, h2, h3, p {
   text-align: center;
   font-family: sans-serif;
 }
@@ -11,14 +11,79 @@ h1 {
   color: white;
 }
 
-h2 {
-  font-size: 18px;
+h2, h3 {
   color: white;
   text-shadow: 2px 2px 4px black;
 }
 
+h2 {
+  font-size: 18px;
+}
+
+h3, p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 body {
   background-image: url("https://bgfons.com/uploads/water/water_texture2353.jpg");
+}
+
+/* Border box sizing makes math easy. Width defines total width of the box, including padding. */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling the button menu and buttons */
+.button-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Bones of this button via https://getcssscan.com/css-buttons-examples Button 21*/
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: whitesmoke;
+  background-image: linear-gradient(1deg, #b0dbfd, whitesmoke 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: darkslategray;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button:active,
+.button:focus {
+  outline: 3px solid darkslategrey;
+}
+
+.button:hover {
+  background-position: -20px -20px;
+}
+
+.button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
 }
 
 /* Our flip boxes live in the roster flexbox */
@@ -26,22 +91,24 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 5px;
+  justify-content: left; 
+  /* not sure if i like left or space-between more... */
+  gap: 15px;
+  /* ^ vertical gap */
 }
 
 /* style image to be cropped into a square */
 .flip-box img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
 /* CSS flipbox how-to: https://www.w3schools.com/howto/howto_css_flip_box.asp */
 .flip-box {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -50,7 +117,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -65,7 +131,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-   -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
 
@@ -74,4 +140,9 @@ body {
   background-color: #006D75;
   color: white;
   transform: rotateY(180deg);
+}
+
+/* This lets us space out the text in the box from the edges */
+.flip-box-content {
+  padding: 10px;
 }
