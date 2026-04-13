@@ -147,8 +147,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: left; 
-  /* not sure if i like left or space-between more... */
+  justify-content: center; 
+  /* not sure if i like center or space-between more... */
   gap: 15px;
   /* ^ vertical gap */
   margin-top:10px;
