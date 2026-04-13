@@ -25,6 +25,13 @@ h3, p {
   line-height: 1.4;
 }
 
+/* Paragraph style for the collapsible box content */
+#collapsible{
+  color: darkslategray;
+  font-family: CircularStd,sans-serif;
+  text-align: left;
+}
+
 body {
   background-image: url("https://bgfons.com/uploads/water/water_texture2353.jpg");
 }
@@ -86,6 +93,55 @@ body {
   box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
 }
 
+/* Styling for the collapsible stat explainer via https://www.w3schools.com/howto/howto_js_collapsible.asp */
+/* Style the button that is used to open and close the collapsible content */
+/* Align with button styling as much as possible */
+.collapsible {
+  background-color: whitesmoke;
+  background-image: linear-gradient(1deg, #b0dbfd, whitesmoke 99%);
+  color: darkslategrey;
+  cursor: pointer;
+  padding: 10px;
+  width: 50%;
+  margin-top: 0px;
+  margin-left:25%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: whitesmoke;
+  background-image: linear-gradient(1deg, #b0dbfd, whitesmoke 99%);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 10px;
+  width: 50%;
+  margin: auto;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Symbols for the collapsible menu when open or closed */
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Developing the roster styling */
 /* Our flip boxes live in the roster flexbox */
 .roster {
   display: flex;
@@ -95,6 +151,8 @@ body {
   /* not sure if i like left or space-between more... */
   gap: 15px;
   /* ^ vertical gap */
+  margin-top:10px;
+  /* gives us a little space between our buttons/collapsible menu and the content */
 }
 
 /* style image to be cropped into a square */

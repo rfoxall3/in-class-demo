@@ -6,10 +6,10 @@ const roster = {
         number: "92",
         position: "Left Wing",
         drafted: "2024, 33rd overall (2nd round, 1st pick)",
-        points: "12",
-        goals: "3",
+        points: "16",
+        goals: "7",
         assists: "9",
-        gp: "17",
+        gp: "25",
         img: "https://sanjosehockeynow.com/wp-content/uploads/sites/7/2026/03/Chernyshov-HS_Sharks_vs_Flames_0221-1536x1023.jpg",
         alt: "Igor Chernyshov gets warmed up"
     },
@@ -18,10 +18,10 @@ const roster = {
         number: "71",
         position: "Center",
         drafted: "2024, 1st overall (1st round, 1st pick)",
-        points: "96",
-        goals: "35",
-        assists: "61",
-        gp: "69",
+        points: "110",
+        goals: "42",
+        assists: "68",
+        gp: "79",
         img: "https://wp.clutchpoints.com/wp-content/uploads/2025/11/San-Jose-Sharks-center-Macklin-Celebrini-71.jpg?w=1200",
         alt: "Macklin looking just so cute"
     },
@@ -30,10 +30,10 @@ const roster = {
         number: "72",
         position: "Left Wing",
         drafted: "2020, 7th overall (1st round, 7th pick)",
-        points: "42",
-        goals: "12",
-        assists: "30",
-        gp: "65",
+        points: "49",
+        goals: "14",
+        assists: "35",
+        gp: "75",
         img: "https://epr-cdn.eliteprospects-assets.com/fm/eprinkside/files/2/images/2024-01/eklund.jpg",
         alt: "William Eklund looking a bit smug"
     },
@@ -42,10 +42,10 @@ const roster = {
         number: "2",
         position: "Center",
         drafted: "2023, 4th overall (1st round, 4th pick)",
-        points: "47",
-        goals: "21",
-        assists: "26",
-        gp: "56",
+        points: "56",
+        goals: "23",
+        assists: "33",
+        gp: "66",
         img: "https://sanjosehockeynow.com/wp-content/uploads/sites/7/2025/12/Smith-Screen-Shot-2025-12-18-at-12.52.03-PM-1000x600.jpeg",
         alt: "Will Smith without a helmet, nice flow!"
     },
@@ -57,7 +57,7 @@ const roster = {
         points: "24",
         goals: "10",
         assists: "14",
-        gp: "54",
+        gp: "55",
         img: "https://www.mercurynews.com/wp-content/uploads/2025/10/BNG-L-SHARKS-1010-37.jpg?w=1080",
         alt: "John Klingberg showing off his buzzcut on the ice"
     },
@@ -66,10 +66,10 @@ const roster = {
         number: "5",
         position: "Defense",
         drafted: "2016, 183rd overall (7th round, 2nd pick)",
-        points: "6",
+        points: "7",
         goals: "1",
-        assists: "5",
-        gp: "41",
+        assists: "6",
+        gp: "51",
         img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.dailyfaceoff.com%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fpublish.dailyfaceoff.com%252Fwp-content%252Fuploads%252F2025%252F03%252FUSATSI_25672082_168383996_lowres.jpg%26w%3D3840%26q%3D75&f=1&nofb=1&ipt=fb4723895daa00c939aa76eb2af67416bee3c38f2749d356292bc771f238f607",
         alt: "Vincent Desharnais yaps it up with a referee"
     },
@@ -78,10 +78,10 @@ const roster = {
         number: "6",
         position: "Defense",
         drafted: "2024, 11th overall (1st round, 11th pick)",
-        points: "12",
+        points: "14",
         goals: "1",
-        assists: "11",
-        gp: "59",
+        assists: "13",
+        gp: "69",
         img: "https://www.eastbaytimes.com/wp-content/uploads/2025/10/BNG-L-SHARKS-1012-5-1.jpg?w=992",
         alt: "Sam Dickinson skates around with no helmet"
     },
@@ -93,7 +93,7 @@ const roster = {
         points: "11",
         goals: "2",
         assists: "9",
-        gp: "42",
+        gp: "45",
         img: "https://deweb-519a7.b-cdn.net/migration/thehockeynews.com/MjEwMzI5ODM1MzIxNDM1MzQw/hs_sharks_vs_anaheim_0269.jpg",
         alt: "Just Ty Dellandrea on the ice"
     },
@@ -102,10 +102,10 @@ const roster = {
         number: "21",
         position: "Center",
         drafted: "2013, 14th overall (1st round, 14th pick)",
-        points: "44",
-        goals: "13",
-        assists: "31",
-        gp: "68",
+        points: "54",
+        goals: "18",
+        assists: "36",
+        gp: "78",
         img: "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_236,w_4500,h_2531/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/12/01k4axp3mfv0ba77pgn8.jpg",
         alt: "Alexander Wennberg flips a puck with no helmet on"
     },
@@ -114,10 +114,10 @@ const roster = {
         number: "23",
         position: "Center",
         drafted: "Undrafted",
-        points: "11",
+        points: "12",
         goals: "5",
-        assists: "6",
-        gp: "69",
+        assists: "7",
+        gp: "79",
         img: "https://staticg.sportskeeda.com/editor/2024/10/de039-17301309225014-1920.jpg",
         alt: "Barclay Goodrow on the ice"
     },
@@ -126,13 +126,13 @@ const roster = {
         number: "30",
         position: "Goalie",
         drafted: "2020, 11th overall (1st round, 11th pick)",
-        points: "19",
+        points: "21",
         // Goalie points are going to be number of wins rather than goals scored
         // Setting goals and assists to 0.1 so they don't mess up the order (0 is the highest level as default!)
         goals: "0.1",
         assists: "0.1",
-        sv: "0.886",
-        gp: "40",
+        sv: "0.885",
+        gp: "46",
         img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg-s-msn-com.akamaized.net%2Ftenant%2Famp%2Fentityid%2FAA1QRHGz.img%3Fw%3D2500%26h%3D1667%26m%3D4%26q%3D94&f=1&nofb=1&ipt=f18792fde83656a1cbc78955b4eb70e86277eba3b81d8d32983a04f25f09ff8a",
         alt: "Yaroslav Askarov celebrates a win"
     },
@@ -141,13 +141,13 @@ const roster = {
         number: "33",
         position: "Goalie",
         drafted: "2014, 37th overall (2nd round, 7th pick)",
-        points: "13",
+        points: "16",
         // Goalie points are going to be number of wins rather than goals scored
         // Setting goals and assists to 0.1 so they don't mess up the order (0 is the highest level as default!)
         goals: "0.1",
         assists: "0.1",
-        sv: "0.895",
-        gp: "33",
+        sv: "0.893",
+        gp: "38",
         img: "https://s3951.pcdn.co/wp-content/uploads/2025/11/San-Jose-Sharks-Alex-Nedeljkovic-scaled.jpg",
         alt: "Ned shows off his awesome helmet design"
     },
@@ -156,10 +156,10 @@ const roster = {
         number: "38",
         position: "Defense",
         drafted: "2017, 49th overall (2nd round, 18th pick)",
-        points: "20",
+        points: "21",
         goals: "6",
-        assists: "14",
-        gp: "69",
+        assists: "15",
+        gp: "79",
         img: "https://www.mercurynews.com/wp-content/uploads/2025/03/BNG-L-SHARKS-0312-03.jpg?w=1080",
         alt: "Mario Ferraro probably arguing with a referee"
     },
@@ -168,10 +168,10 @@ const roster = {
         number: "44",
         position: "Left Wing",
         drafted: "Undrafted",
-        points: "29",
-        goals: "21",
-        assists: "8",
-        gp: "56",
+        points: "33",
+        goals: "23",
+        assists: "10",
+        gp: "69",
         img: "https://www.nhltraderumor.com/wp-content/uploads/2026/01/kiefer-sherwood-vancouver-canucks-trade-rumor-sharks-1024x615.jpg",
         alt: "Kiefer Sherwood in a maybe-Photoshopped Sharks away jersey"
     },
@@ -180,10 +180,10 @@ const roster = {
         number: "51",
         position: "Right Wing",
         drafted: "Undrafted",
-        points: "40",
-        goals: "19",
-        assists: "21",
-        gp: "68",
+        points: "44",
+        goals: "20",
+        assists: "24",
+        gp: "78",
         img: "https://deweb-519a7.b-cdn.net/migration/thehockeynews.com/MjA2OTIyMDMzMjQ5MjY1MTIz/usatsi_23069291.jpg",
         alt: "Collin Graf looking very determined with his tongue out"
     },
@@ -192,10 +192,10 @@ const roster = {
         number: "63",
         position: "Center",
         drafted: "2021, 39th overall (2nd round, 7th pick)",
-        points: "5",
-        goals: "3",
-        assists: "2",
-        gp: "46",
+        points: "7",
+        goals: "4",
+        assists: "3",
+        gp: "56",
         img: "https://www.mercurynews.com/wp-content/uploads/2025/03/BNG-L-SHARKS-0316-1.jpg?w=863",
         alt: "Zack Ostapchuk looking very intense"
     },
@@ -204,10 +204,10 @@ const roster = {
         number: "73",
         position: "Center",
         drafted: "2010, 47th overall (2nd round, 17th pick)",
-        points: "44",
-        goals: "18",
-        assists: "26",
-        gp: "67",
+        points: "49",
+        goals: "19",
+        assists: "30",
+        gp: "77",
         img: "https://media.bleacherreport.com/image/upload/v1728741424/y80nxq6ewwhkwrvpqpzo.jpg",
         alt: "Tyler Toffoli looking focused on the ice"
     },
@@ -228,10 +228,10 @@ const roster = {
         number: "77",
         position: "Center",
         drafted: "2025, 2nd overall (1st round, 2nd pick)",
-        points: "16",
+        points: "18",
         goals: "7",
-        assists: "9",
-        gp: "32",
+        assists: "11",
+        gp: "42",
         img: "https://media.nbcsportsbayarea.com/2025/10/Michael-Misa-Sharks.jpg?quality=85&strip=all&resize=1200%2C675",
         alt: "Michael Misa looks a bit nervous before his first NHL game"
     },
@@ -240,10 +240,10 @@ const roster = {
         number: "81",
         position: "Right Wing",
         drafted: "2015, 149th overall (5th round, 28th pick)",
-        points: "23",
-        goals: "15",
+        points: "25",
+        goals: "17",
         assists: "8",
-        gp: "56",
+        gp: "64",
         img: "https://deweb-519a7.b-cdn.net/post-images/7f2f9f91-477d-4ff5-894e-8352d8532495.jpeg",
         alt: "Adam Gaudette shows off his sick flow without a helmet on"
     },
@@ -255,7 +255,7 @@ const roster = {
         points: "10",
         goals: "9",
         assists: "1",
-        gp: "22",
+        gp: "23",
         img: "https://s3951.pcdn.co/wp-content/uploads/2025/10/Pavol-Regenda-Sharks-1536x1023.jpg",
         alt: "Pavol Regenda on the ice looking very focused"
     },
@@ -264,10 +264,10 @@ const roster = {
         number: "85",
         position: "Defense",
         drafted: "2020, 20th overall (1st round, 20th pick)",
-        points: "11",
-        goals: "4",
+        points: "12",
+        goals: "5",
         assists: "7",
-        gp: "38",
+        gp: "47",
         img: "https://www.mercurynews.com/wp-content/uploads/2024/12/BNG-L-SHARKS-1218-27.jpg?w=1401",
         alt: "Shakir Mukhamadullin looks focused and Russian"
     },
@@ -288,10 +288,10 @@ const roster = {
         number: "4",
         position: "Defense",
         drafted: "2009, 16th overall (1st round, 16th pick)",
-        points: "4",
-        goals: "0",
-        assists: "4",
-        gp: "22",
+        points: "7",
+        goals: "1",
+        assists: "6",
+        gp: "32",
         img: "https://www.yardbarker.com/media/1/6/16d6ae87c56d67fa4b6878411775c78fd6694fdf/thumb_16x9/oct-11-2025-san-jose-california-usa-san-jose.jpg",
         alt: "Nick Leddy shows off his ugly beard and bad vibes"
     },
@@ -300,12 +300,24 @@ const roster = {
         number: "9",
         position: "Defense",
         drafted: "2009, 55th overall (2nd round, 25th pick)",
-        points: "29",
+        points: "36",
         goals: "3",
-        assists: "26",
-        gp: "69",
+        assists: "33",
+        gp: "79",
         img: "https://sanjosehockeynow.com/wp-content/uploads/sites/7/2025/12/Orlov-HS_Sharks_vs_Vegas_0039-scaled.jpg",
         alt: "Dmitry Orlov always has his mouth open, what's up with that?"
+    },
+    player26: {
+        name: "Luca Cagnoni",
+        number: "42",
+        position: "Defense",
+        drafted: "2023, 123rd overall (4th round, 27th pick)",
+        points: "2",
+        goals: "0",
+        assists: "2",
+        gp: "6",
+        img: "https://static01.nyt.com/athletic/uploads/wp/2025/04/07102954/USATSI_25745787-1024x683.jpg?width=1000&quality=70&auto=webp",
+        alt: "Luca Cagnoni looking focused on the ice during his NHL debut"
     },
 }
 
@@ -369,3 +381,19 @@ document.getElementById('sortGames').addEventListener('click', () => sortPlayers
 
 // The default view will be to sort by jersey number, so call that function on page load
 sortPlayers('number');
+
+// Dealing with the collapsible menu when clicked, from the W3Schools tutorial: https://www.w3schools.com/howto/howto_js_collapsible.asp
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 

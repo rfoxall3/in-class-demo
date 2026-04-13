@@ -9,6 +9,7 @@
 <h1>Welcome to the Boy Aquarium</h1>
 <h2>The future is teal! Meet the 2025-26 San Jose Sharks. 
   <br>Hover over a player to learn more about them. Click a button to sort!</h2>
+<h3>Statistics as of April 12, 2026</h3>
 
 <!-- Make buttons and button menu -->
  <div class="button-menu">
@@ -16,6 +17,18 @@
   <button onclick="sortPlayers('points')" id="sortPoints" class="button">Sort by Points</button>
   <button onclick="sortPlayers('games')" id="sortGames" class="button">Sort by Games Played</button>
 </div>
+
+<!-- Use a collapsible menu to provide a guide to hockey statistics -->
+ <button type="button" class="collapsible">What do these stats mean?</button>
+  <div class="content">
+    <p id="collapsible"><b>Position:</b> There are three types of positions in hockey: forwards, defensemen, and goalies. Forwards are further defined by where they primarily make plays - along the left or right wings or up the center.</p>
+    <p id="collapsible"><b>Draft Status:</b> The NHL draft is the primary way players enter the league. A better (lower) draft number indicates a player with more NHL potential. Players can enter the draft if they will be between 18 and 21 by September 15th. 
+      The draft happens once a year and there's no guarantee a player will be selected by a team. However, players can also sign an NHL contract as a free agent without being drafted. </p>
+    <p id="collapsible"><b>Points:</b> A player's total points are the sum of their goals (G) and assists (A). A player earns a goal by shooting the puck into the net. A player earns an assist by directly setting up a goal - up to two players can assist on one goal.</p>
+    <p id="collapsible"><b>SV%:</b> Save percentage, a statistic for goalie success. Calculated as (shots against - goals against) / shots against. Higher is better!</p>
+    <p id="collapsible"><b>Games Played:</b> The number of games a player has played in the NHL for the 2025-26 regular season. A full season consists of 82 games, without counting playoff games. 
+      One goalies typically does not play every game due to exhaustion; the goalie who starts more often is considered the "primary" goalie while the other is the "backup". Many teams split their goalies more evenly, which is considered a "goalie tandem".</p>
+  </div>
 
 <!-- So many flipboxes within one roster structure -->
 <div class="roster">
@@ -284,6 +297,17 @@
     </div>
   </div>
   <div class="flip-box" id="player25">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="https://deweb-519a7.b-cdn.net/post-images/cac6b09d-cd28-4f98-b573-ad5febe0de24.jpeg" alt="Dmitry Orlov holds his stick">
+      </div>
+      <div class="flip-box-back">
+        <div class="flip-box-content">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flip-box" id="player26">
     <div class="flip-box-inner">
       <div class="flip-box-front">
         <img src="https://deweb-519a7.b-cdn.net/post-images/cac6b09d-cd28-4f98-b573-ad5febe0de24.jpeg" alt="Dmitry Orlov holds his stick">
